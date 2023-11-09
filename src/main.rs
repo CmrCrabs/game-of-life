@@ -15,11 +15,11 @@ fn main() {
 
     let mut i: u32 = 0;
     loop {
-        sleep(Duration::from_millis(10));
+        sleep(Duration::from_millis(1));
         (x, y) = get_dimensions();
         map = resize_map(map, x, y);
 
-        if i % 10 == 0 {
+        if i % 200 == 0 {
             map = calculate(map, x, y);
         }
 
